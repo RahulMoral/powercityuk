@@ -1,0 +1,44 @@
+.site-header{
+	.main-menu{
+		background-color: white;
+		transition: linear 0.3s;
+		.navbar{
+			justify-content: center;
+			overflow: hidden;
+			padding: 20px 0;
+			.main-menu-logo{
+				display: inline-block;
+				height: auto;
+				transition: linear 0.3s;
+				.before-scroll-logo{
+					display: inline-block;
+					max-width: 159px;
+					@include media-breakpoint-down(xl){
+						max-width: 100px;
+					}
+				}
+				.after-scroll-logo{
+					display: none;
+					max-width: 280px;
+				}
+			}
+		}
+	}
+	&.after-scroll{
+		.main-menu{
+			background-color: #021130;
+			box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+			.navbar{
+				padding: 10px 0;
+				.main-menu-logo{
+					.before-scroll-logo{
+						display: none;
+					}
+					.after-scroll-logo{
+						display: inline-block;
+					}
+				}
+			}
+		}
+	}
+}
