@@ -46,36 +46,43 @@
 					<div class="container">
 						<div class="home-content-wrapper">
 							<div class="home-content-contact">
-								<form action="" method="POST">
+								<form action="send-email.php" method="POST">
 									<div class="form-group">
-										<label class="form-label" for="homeContactName">Name</label>
-										<input type="text" class="form-control" id="homeContactName" placeholder="Your full name"  />
+										<h3>Contact Form</h3>
+									</div>
+									<div class="form-group">
+										<label class="form-label" for="homeContactName">Name<span>*</span></label>
+										<input type="text" name="name" class="form-control" required id="homeContactName" placeholder="Your full name"  />
 									</div>
 									<!-- Each item -->
 									<div class="form-group">
-										<label class="form-label" for="homeContactEmail">Email</label>
-										<input type="text" class="form-control" id="homeContactEmail" placeholder="Your email address"  />
+										<label class="form-label" for="homeContactEmail">Email<span>*</span></label>
+										<input type="text" name="email" class="form-control" required id="homeContactEmail" placeholder="Your email address"  />
 									</div>
 									<!-- Each item -->
 									<div class="form-group">
 										<label class="form-label" for="homeContactMobile">Mobile Number</label>
-										<input type="text" class="form-control" id="homeContactMobile" placeholder="Your phone number"  />
+										<input type="text" name="mobile" class="form-control" id="homeContactMobile" placeholder="Your phone number"  />
 									</div>
 									<!-- Each item -->
 									<div class="form-group">
-										<label class="form-label" for="homeContactMessage">Message</label>
-										<textarea class="form-control" id="homeContactMessage" placeholder="Write your message" rows="6"></textarea>
+										<label class="form-label" for="homeContactMessage">Message<span>*</span></label>
+										<textarea name="message" class="form-control" required id="homeContactMessage" placeholder="Write your message" rows="6"></textarea>
 									</div>
 									<!-- Each item -->
 									<div class="form-group">
-										<button type="button" role="button" class="home-content-contact-submit">Submit</button>
+										<div class="g-recaptcha" data-sitekey="6LdCjm0rAAAAAN9WBOd-2glpRiTsZ2oiDpkaR3Rh"></div>
+									</div>
+									<!-- Each item -->
+									<div class="form-group">
+										<button type="submit" role="button" class="home-content-contact-submit">Submit</button>
 									</div>
 									<!-- Each item -->
 								</form>
 							</div>
 							<div class="home-content-info">
 								<div class="home-content-info-address">
-									<h3>PCI London Zone Campuses</h3>
+									<h3>PCI London Campuses</h3>
 									<div class="home-content-info-items">
 										<div class="home-content-info-item">
 											<a href="javascript:void(0);" class="home-content-info-item-trigger">
@@ -102,7 +109,7 @@
 															<span>
 																<i class="fa-solid fa-phone"></i>
 															</span>
-															<span>Text</span>
+															<span>Phone number not found</span>
 														</div>
 														<!-- Each item -->
 													</div>
@@ -135,7 +142,7 @@
 															<span>
 																<i class="fa-solid fa-phone"></i>
 															</span>
-															<span>Text</span>
+															<span>Phone number not found</span>
 														</div>
 														<!-- Each item -->
 													</div>
@@ -168,7 +175,7 @@
 															<span>
 																<i class="fa-solid fa-phone"></i>
 															</span>
-															<span>Text</span>
+															<span>Phone number not found</span>
 														</div>
 														<!-- Each item -->
 													</div>
@@ -201,7 +208,7 @@
 															<span>
 																<i class="fa-solid fa-phone"></i>
 															</span>
-															<span>Text</span>
+															<span>Phone number not found</span>
 														</div>
 														<!-- Each item -->
 													</div>
@@ -234,7 +241,7 @@
 															<span>
 																<i class="fa-solid fa-phone"></i>
 															</span>
-															<span>Text</span>
+															<span>Phone number not found</span>
 														</div>
 														<!-- Each item -->
 													</div>
@@ -267,7 +274,7 @@
 															<span>
 																<i class="fa-solid fa-phone"></i>
 															</span>
-															<span>Text</span>
+															<span>Phone number not found</span>
 														</div>
 														<!-- Each item -->
 													</div>
@@ -300,7 +307,7 @@
 															<span>
 																<i class="fa-solid fa-phone"></i>
 															</span>
-															<span>Text</span>
+															<span>Phone number not found</span>
 														</div>
 														<!-- Each item -->
 													</div>
@@ -333,7 +340,7 @@
 															<span>
 																<i class="fa-solid fa-phone"></i>
 															</span>
-															<span>Text</span>
+															<span>Phone number not found</span>
 														</div>
 														<!-- Each item -->
 													</div>
@@ -371,7 +378,7 @@
 															<span>
 																<i class="fa-solid fa-phone"></i>
 															</span>
-															<span>Text</span>
+															<span>Phone number not found</span>
 														</div>
 														<!-- Each item -->
 													</div>
@@ -404,7 +411,7 @@
 															<span>
 																<i class="fa-solid fa-phone"></i>
 															</span>
-															<span>Text</span>
+															<span>Phone number not found</span>
 														</div>
 														<!-- Each item -->
 													</div>
@@ -437,7 +444,7 @@
 															<span>
 																<i class="fa-solid fa-phone"></i>
 															</span>
-															<span>Text</span>
+															<span>Phone number not found</span>
 														</div>
 														<!-- Each item -->
 													</div>
@@ -470,7 +477,7 @@
 															<span>
 																<i class="fa-solid fa-phone"></i>
 															</span>
-															<span>Text</span>
+															<span>Phone number not found</span>
 														</div>
 														<!-- Each item -->
 													</div>
@@ -540,6 +547,7 @@
 			<!-- Footer end -->
 			<script src="js/bootstrap.bundle.min.js"></script>
 			<script src="js/common.js"></script>
+			<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 		</div>
 	</body>
 </html>

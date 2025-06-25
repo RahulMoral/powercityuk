@@ -12159,17 +12159,7 @@ button:focus {
 }
 
 .home-content {
-  padding: 120px 0;
-}
-@media (max-width: 1199.98px) {
-  .home-content {
-    padding: 80px 0;
-  }
-}
-@media (max-width: 1023.98px) {
-  .home-content {
-    padding: 60px 0;
-  }
+  padding: 60px 0;
 }
 .home-content .home-content-wrapper {
   display: grid;
@@ -12197,6 +12187,15 @@ button:focus {
   flex-direction: column;
   row-gap: 6px;
 }
+.home-content .home-content-wrapper .home-content-contact form .form-group h3, .home-content .home-content-wrapper .home-content-contact form .form-group .h3 {
+  color: #6D5DFB;
+  font-size: 24px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  margin-bottom: 0;
+  text-align: center;
+  width: 100%;
+}
 .home-content .home-content-wrapper .home-content-contact form .form-group .form-label {
   color: #0B0852;
   font-size: 14px;
@@ -12204,8 +12203,11 @@ button:focus {
   font-weight: 500;
   margin-bottom: 0;
 }
+.home-content .home-content-wrapper .home-content-contact form .form-group .form-label span {
+  color: red;
+}
 .home-content .home-content-wrapper .home-content-contact form .form-group .form-control {
-  border-color: #ededed;
+  border-color: #6D5DFB;
   border-radius: 4px;
   box-shadow: none;
   color: #0B0852;
@@ -12213,6 +12215,7 @@ button:focus {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   height: 46px;
+  transition: linear 0.4s;
 }
 .home-content .home-content-wrapper .home-content-contact form .form-group textarea.form-control {
   height: auto;
@@ -12247,7 +12250,7 @@ button:focus {
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 20px;
 }
-@media (max-width: 1399.98px) {
+@media (max-width: 767.98px) {
   .home-content .home-content-wrapper .home-content-info {
     grid-template-columns: 1fr;
   }
@@ -12258,7 +12261,7 @@ button:focus {
   row-gap: 20px;
 }
 .home-content .home-content-wrapper .home-content-info .home-content-info-address h3, .home-content .home-content-wrapper .home-content-info .home-content-info-address .h3 {
-  color: #0B0852;
+  color: #6D5DFB;
   font-size: 24px;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
@@ -12270,12 +12273,12 @@ button:focus {
   grid-gap: 15px;
   grid-template-columns: repeat(2, 1fr);
 }
-@media (max-width: 1399.98px) {
+@media (max-width: 1199.98px) {
   .home-content .home-content-wrapper .home-content-info .home-content-info-address .home-content-info-items {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr;
   }
 }
-@media (max-width: 767.98px) {
+@media (max-width: 1023.98px) {
   .home-content .home-content-wrapper .home-content-info .home-content-info-address .home-content-info-items {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -12287,28 +12290,57 @@ button:focus {
 }
 .home-content .home-content-wrapper .home-content-info .home-content-info-address .home-content-info-items .home-content-info-item .home-content-info-item-trigger {
   align-items: center;
-  background-color: #f5f5f7;
-  border: 1px solid #d2d2d7;
+  background-color: #0536c1;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  overflow: hidden;
   padding: 20px 10px;
+  position: relative;
   row-gap: 10px;
 }
+.home-content .home-content-wrapper .home-content-info .home-content-info-address .home-content-info-items .home-content-info-item .home-content-info-item-trigger:after {
+  background-color: rgba(50, 0, 117, 0.85);
+  content: "";
+  height: 130%;
+  left: -10%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(13deg);
+  transition: linear 0.4s;
+  width: 25%;
+}
+.home-content .home-content-wrapper .home-content-info .home-content-info-address .home-content-info-items .home-content-info-item .home-content-info-item-trigger:before {
+  background-color: rgba(26, 0, 148, 0.85);
+  content: "";
+  height: 130%;
+  left: -10%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(-13deg);
+  transition: linear 0.4s;
+  width: 25%;
+}
 .home-content .home-content-wrapper .home-content-info .home-content-info-address .home-content-info-items .home-content-info-item .home-content-info-item-trigger span {
-  color: #0B0852;
+  color: white;
   font-size: 14px;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   line-height: 1.25;
   text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 1;
 }
 .home-content .home-content-wrapper .home-content-info .home-content-info-address .home-content-info-items .home-content-info-item .home-content-info-item-trigger span:last-of-type {
-  color: #0dcaf0;
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  text-decoration: underline;
+  color: #fd9800;
+}
+.home-content .home-content-wrapper .home-content-info .home-content-info-address .home-content-info-items .home-content-info-item .home-content-info-item-trigger:hover:after, .home-content .home-content-wrapper .home-content-info .home-content-info-address .home-content-info-items .home-content-info-item .home-content-info-item-trigger:focus:after {
+  background-color: rgba(26, 0, 148, 0.85);
+}
+.home-content .home-content-wrapper .home-content-info .home-content-info-address .home-content-info-items .home-content-info-item .home-content-info-item-trigger:hover:before, .home-content .home-content-wrapper .home-content-info .home-content-info-address .home-content-info-items .home-content-info-item .home-content-info-item-trigger:focus:before {
+  background-color: rgba(50, 0, 117, 0.85);
 }
 .home-content .home-content-wrapper .home-content-info .home-content-info-address .home-content-info-items .home-content-info-item .home-content-info-item-popups {
   align-items: center;
@@ -12320,14 +12352,20 @@ button:focus {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 1030;
 }
 .home-content .home-content-wrapper .home-content-info .home-content-info-address .home-content-info-items .home-content-info-item .home-content-info-item-popups .home-content-info-item-popups-container {
   background-color: white;
   border: 1px solid #ededed;
   border-radius: 5px;
   box-shadow: -5px 0 10px rgba(0, 0, 0, 0.1), 5px 0 10px rgba(0, 0, 0, 0.1), 0 5px 10px rgba(0, 0, 0, 0.05);
-  max-width: 270px;
+  max-width: 500px;
   width: 100%;
+}
+@media (max-width: 767.98px) {
+  .home-content .home-content-wrapper .home-content-info .home-content-info-address .home-content-info-items .home-content-info-item .home-content-info-item-popups .home-content-info-item-popups-container {
+    max-width: 270px;
+  }
 }
 .home-content .home-content-wrapper .home-content-info .home-content-info-address .home-content-info-items .home-content-info-item .home-content-info-item-popups .home-content-info-item-popups-container .home-content-info-item-popups-header {
   align-items: center;
@@ -12337,10 +12375,10 @@ button:focus {
   padding: 10px 15px;
 }
 .home-content .home-content-wrapper .home-content-info .home-content-info-address .home-content-info-items .home-content-info-item .home-content-info-item-popups .home-content-info-item-popups-container .home-content-info-item-popups-header h5, .home-content .home-content-wrapper .home-content-info .home-content-info-address .home-content-info-items .home-content-info-item .home-content-info-item-popups .home-content-info-item-popups-container .home-content-info-item-popups-header .h5 {
-  color: #0B0852;
+  color: #0536c1;
   font-size: 14px;
   font-family: "Poppins", sans-serif;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 1.25;
   margin-bottom: 0;
 }
@@ -12356,7 +12394,7 @@ button:focus {
   display: flex;
   flex-direction: column;
   padding: 20px 15px;
-  row-gap: 10px;
+  row-gap: 15px;
 }
 .home-content .home-content-wrapper .home-content-info .home-content-info-address .home-content-info-items .home-content-info-item .home-content-info-item-popups .home-content-info-item-popups-container .home-content-info-item-popups-body .home-content-info-item-popups-item {
   align-items: flex-start;
@@ -12365,12 +12403,12 @@ button:focus {
   display: flex;
 }
 .home-content .home-content-wrapper .home-content-info .home-content-info-address .home-content-info-items .home-content-info-item .home-content-info-item-popups .home-content-info-item-popups-container .home-content-info-item-popups-body .home-content-info-item-popups-item span {
-  color: #0B0852;
+  color: #0536c1;
   font-size: 20px;
   line-height: 1;
 }
 .home-content .home-content-wrapper .home-content-info .home-content-info-address .home-content-info-items .home-content-info-item .home-content-info-item-popups .home-content-info-item-popups-container .home-content-info-item-popups-body .home-content-info-item-popups-item span:last-of-type {
-  color: #7b7b7b;
+  color: #1E1A7A;
   font-size: 14px;
   font-family: "Poppins", sans-serif;
   font-weight: 400;

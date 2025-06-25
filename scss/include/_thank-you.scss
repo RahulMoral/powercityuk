@@ -1,0 +1,23 @@
+.thank-you{
+	padding: 60px 0;
+	.thank-you-wrapper{
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+		row-gap: 15px;
+		text-align: center;
+		h1{
+			color: #1A0094;
+			font-size: 30px;
+			@include font-Poppins-Bold;
+			line-height: 1.25;
+			margin-bottom: 0;
+		}
+		p{
+			color: #0B0852;
+			font-size: 15px;
+			@include font-Poppins-Regular;
+			line-height: 1.5;
+		}
+	}
+}
