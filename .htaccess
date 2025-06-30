@@ -1,0 +1,8 @@
+RewriteEngine On
+
+# Rewrite URLs like /contact to /contact.php if the file exists
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^([a-zA-Z0-9_-]+)$ $1.php [L]
+
+# Optional: remove trailing slash
+RewriteRule ^(.*)/$ /$1 [L,R=301]

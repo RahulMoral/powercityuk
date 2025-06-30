@@ -3,7 +3,7 @@
 		background-color: white;
 		transition: linear 0.3s;
 		.navbar{
-			justify-content: center;
+			justify-content: space-between;
 			overflow: hidden;
 			padding: 20px 0;
 			.main-menu-logo{
@@ -22,6 +22,24 @@
 					max-width: 280px;
 				}
 			}
+			.main-menu-give-button{
+				background-color: #0536c1;
+				border-radius: 20px;
+				color: white;
+				font-size: 18px;
+				@include font-Poppins-SemiBold;
+				height: 40px;
+				line-height: calc(20 / 18);
+				outline: none;
+				padding: 10px 30px;
+				text-decoration: none;
+				text-transform: uppercase;
+				&:hover,
+				&:focus{
+					outline: none;
+					text-decoration: none;
+				}
+			}
 		}
 	}
 	&.after-scroll{
@@ -37,6 +55,10 @@
 					.after-scroll-logo{
 						display: inline-block;
 					}
+				}
+				.main-menu-give-button{
+					background-color: white;
+					color: #0536c1;
 				}
 			}
 		}

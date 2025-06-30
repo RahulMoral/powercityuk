@@ -13,32 +13,17 @@
 	<body>
 		<div class="page-wrapper">
 			<!-- Header -->
-			<header class="site-header">
-				<section class="main-menu">
-					<div class="container">
-						<nav class="navbar">
-							<a class="main-menu-logo" href="/">
-								<span class="before-scroll-logo">
-									<img alt="POWER CITY UK" class="img-fluid d-block" src="/images/logo.png" />
-								</span>
-								<span class="after-scroll-logo">
-									<img alt="POWER CITY UK" class="img-fluid d-block" src="/images/logo-after.png" />
-								</span>
-							</a>
-						</nav>
-					</div>
-				</section>
-			</header>
+			<?php include(dirname(__FILE__) . '/inc/header.php') ?>
 			<!-- Header end -->
 			<!-- Main -->
 			<main class="site-main">
 				<!-- Home banner -->
-				<section class="home-banner">
-					<img alt="Banner Image" src="/images/banner-image-2.jpg" class="img-fluid d-block w-100" />
+				<a class="home-banner" href="https://www.youtube.com/@abeldaminaministries/streams" target="_blank">
+					<img alt="Banner Image" src="/images/new-home-page-banner.jpg" class="img-fluid d-block w-100" />
 					<div class="container">
 						<div class="home-banner-wrapper">&nbsp;</div>
 					</div>
-				</section>
+				</a>
 				<!-- Home banner end -->
 				<!-- Home content -->
 				<section class="home-content">
@@ -64,54 +49,6 @@
 										<input type="text" required name="mobile" class="form-control" id="homeContactMobile" placeholder="Your phone number"  />
 									</div>
 									<!-- Each item -->
-                                    <div class="form-group flex-wrap flex-row">
-                                        <div class="form-check form-check-inline">
-                                            <input class="form-check-input" name="discipleship" type="checkbox" value="" id="discipleship">
-                                            <label class="form-check-label" for="discipleship">Discipleship</label>
-                                        </div>
-                                        <!-- Each item -->
-                                        <div class="form-check form-check-inline">
-                                            <input class="form-check-input" name="training_equipping" type="checkbox" value="" id="trainingEquipping">
-                                            <label class="form-check-label" for="trainingEquipping">Training and Equipping</label>
-                                        </div>
-                                        <!-- Each item -->
-                                        <div class="form-check form-check-inline">
-                                            <input class="form-check-input" name="join_campus" type="checkbox" value="" id="joinCampus">
-                                            <label class="form-check-label" for="joinCampus">Join a campus</label>
-                                        </div>
-                                        <!-- Each item -->
-                                        <div class="form-check form-check-inline">
-                                            <input class="form-check-input" name="start_campus" type="checkbox" value="" id="startCampus">
-                                            <label class="form-check-label" for="startCampus">Start a campus</label>
-                                        </div>
-                                        <!-- Each item -->
-                                        <div class="form-check form-check-inline">
-                                            <input class="form-check-input" name="prayer" type="checkbox" value="" id="prayer">
-                                            <label class="form-check-label" for="prayer">Prayer</label>
-                                        </div>
-                                        <!-- Each item -->
-                                        <div class="form-check form-check-inline">
-                                            <input class="form-check-input" name="counselling" type="checkbox" value="" id="counselling">
-                                            <label class="form-check-label" for="counselling">Counselling</label>
-                                        </div>
-                                        <!-- Each item -->
-                                        <div class="form-check form-check-inline">
-                                            <input class="form-check-input" name="resources" type="checkbox" value="" id="resources">
-                                            <label class="form-check-label" for="resources">Resources</label>
-                                        </div>
-                                        <!-- Each item -->
-                                        <div class="form-check form-check-inline">
-                                            <input class="form-check-input" name="mentoring_academy" type="checkbox" value="" id="mentoringAcademy">
-                                            <label class="form-check-label" for="mentoringAcademy">Mentoring Academy</label>
-                                        </div>
-                                        <!-- Each item -->
-                                        <div class="form-check form-check-inline">
-                                            <input class="form-check-input" name="question" type="checkbox" value="" id="question">
-                                            <label class="form-check-label" for="question">?</label>
-                                        </div>
-                                        <!-- Each item -->
-                                    </div>
-                                    <!-- Each item -->
 									<div class="form-group">
 										<label class="form-label" for="homeContactMessage">Message<span>*</span></label>
 										<textarea name="message" class="form-control" required id="homeContactMessage" placeholder="Write your message" rows="6"></textarea>
@@ -450,7 +387,7 @@
 									</div>
 								</div>
 								<div class="home-content-info-address">
-									<h3>PCI UK Zone Campuses</h3>
+									<h3>UK Zone Campuses</h3>
 									<div class="home-content-info-items">
 										<div class="home-content-info-item">
 											<a href="javascript:void(0);" class="home-content-info-item-trigger">
@@ -647,6 +584,45 @@
 											</div>
 										</div>
 										<!-- Each item -->
+                                        <div class="home-content-info-item">
+                                            <a href="javascript:void(0);" class="home-content-info-item-trigger">
+                                                <span>Nottingham Campus</span>
+                                                <span>Details</span>
+                                            </a>
+                                            <div class="home-content-info-item-popups">
+                                                <div class="home-content-info-item-popups-container">
+                                                    <div class="home-content-info-item-popups-header">
+                                                        <h5>Nottingham Campus</h5>
+                                                        <button type="button" role="button" class="home-content-info-item-popups-close">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                                                <path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                    <div class="home-content-info-item-popups-body">
+                                                        <div class="home-content-info-item-popups-item">
+															<span>
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+																	<path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/>
+																</svg>
+															</span>
+                                                            <span>35  Friars Wharf, Gateshead Newcastle, NE10 0QX</span>
+                                                        </div>
+                                                        <!-- Each item -->
+                                                        <div class="home-content-info-item-popups-item">
+															<span>
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+																	<path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/>
+																</svg>
+															</span>
+                                                            <span>Phone number not found</span>
+                                                        </div>
+                                                        <!-- Each item -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Each item -->
 									</div>
 								</div>
 							</div>
@@ -657,22 +633,7 @@
 			</main>
 			<!-- Main end -->
 			<!-- Footer -->
-			<footer class="site-footer">
-				<section class="main-footer">
-					<div class="container">
-						<div class="main-footer-wrapper">
-							<div class="main-footer-about">
-								<h4>About Powercity</h4>
-								<p>Power City International is a Word of Faith, non-denominational, Pentecostal church whose mission is reaching and harvesting lost souls for Christ and teaching the Body of Christ how to effectively apply God’s principles to have victory in every area of life.</p>
-							</div>
-							<div class="main-footer-charity">
-								<span>Charity Number:</span>
-								<span>1199382</span>
-							</div>
-						</div>
-					</div>
-				</section>
-			</footer>
+			<?php include(dirname(__FILE__) . '/inc/footer.php'); ?>
 			<!-- Footer end -->
         </div>
         <script src="js/bootstrap.bundle.min.js"></script>

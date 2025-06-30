@@ -16,8 +16,8 @@ function scssTask() {
 		.pipe(plumber())
 		.pipe(sass({outputStyle: 'compressed', quietDeps: true}).on('error', sass.logError))
 		.pipe(postcss([autoprefixer()]))
-		.pipe(dest(paths.styles.dest))
-		.pipe(browsersync.stream());
+		.pipe(dest(paths.styles.dest));
+		//.pipe(browsersync.stream());
 }
 exports.scssTask = scssTask
 // Browsersync Tasks
