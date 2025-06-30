@@ -12044,9 +12044,10 @@ button:focus {
   transition: linear 0.3s;
 }
 .site-header .main-menu .navbar {
-  justify-content: space-between;
+  justify-content: center;
   overflow: hidden;
   padding: 20px 0;
+  position: relative;
 }
 .site-header .main-menu .navbar .main-menu-logo {
   display: inline-block;
@@ -12077,8 +12078,12 @@ button:focus {
   line-height: 1.1111111111;
   outline: none;
   padding: 10px 30px;
+  position: absolute;
+  right: 0;
   text-decoration: none;
   text-transform: uppercase;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .site-header .main-menu .navbar .main-menu-give-button:hover, .site-header .main-menu .navbar .main-menu-give-button:focus {
   outline: none;

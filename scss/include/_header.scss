@@ -3,9 +3,10 @@
 		background-color: white;
 		transition: linear 0.3s;
 		.navbar{
-			justify-content: space-between;
+			justify-content: center;
 			overflow: hidden;
 			padding: 20px 0;
+			position: relative;
 			.main-menu-logo{
 				display: inline-block;
 				height: auto;
@@ -32,8 +33,12 @@
 				line-height: calc(20 / 18);
 				outline: none;
 				padding: 10px 30px;
+				position: absolute;
+				right: 0;
 				text-decoration: none;
 				text-transform: uppercase;
+				top: 50%;
+				transform: translateY(-50%);
 				&:hover,
 				&:focus{
 					outline: none;
