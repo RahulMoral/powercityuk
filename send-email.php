@@ -15,7 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $captchaData = json_decode($verifyResponse);
 
     if (!$captchaData->success) {
-        echo "reCAPTCHA verification failed. Please go back and try again.";
+        echo 'Please complete the reCAPTCHA';
         exit;
     }
 
@@ -27,7 +27,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     // Basic validation
     if (empty($name) || empty($email) || empty($message)) {
-        echo "Please fill in all required fields.";
+        echo 'Please fill in all required fields.';
         exit;
     }
 
@@ -60,7 +60,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         ";
 
         $mail->send();
-        header('Location: thank-you.html');
+        echo 'SUCCESS';
         exit;
     } catch (Exception $e) {
         echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";

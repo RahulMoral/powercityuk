@@ -43,7 +43,8 @@
 		grid-gap: 40px;
 		grid-template-columns: 400px 1fr;
 		@include media-breakpoint-down(lg){
-			grid-template-columns: 1fr;
+			display: flex;
+			flex-direction: column;
 		}
 		.home-content-contact{
 			form{
@@ -97,6 +98,12 @@
 					textarea{
 						&.form-control{
 							height: auto;
+						}
+					}
+					.recaptcha-wrapper{
+						@include media-breakpoint-down(sm){
+							transform: scale(0.75);
+							transform-origin: top left;
 						}
 					}
 					.home-content-contact-submit {
@@ -263,6 +270,13 @@
 										color: red;
 										line-height: 1;
 										padding: 0;
+										svg{
+											width: 16px;
+											path{
+												fill: red;
+												fill-opacity: 1;
+											}
+										}
 									}
 								}
 								.home-content-info-item-popups-body{
@@ -277,12 +291,20 @@
 										span{
 											color: #0536c1;
 											font-size: 20px;
-											line-height: 1;
+											line-height: 0.5;
 											&:last-of-type{
 												color: #1E1A7A;
 												font-size: 14px;
 												@include font-Poppins-Regular;
 												line-height: calc(20 / 14);
+											}
+											svg{
+												height: 20px;
+												width: 16px;
+												path{
+													fill: #0536c1;
+													fill-opacity: 1;
+												}
 											}
 										}
 									}
