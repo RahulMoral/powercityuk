@@ -1,5 +1,6 @@
 'use strict';
 const { src, dest, watch, series } = require('gulp');
+const plumber = require('gulp-plumber');
 const sass = require('gulp-sass')(require('sass'));
 const autoprefixer = require('autoprefixer');
 const postcss = require('gulp-postcss');
@@ -12,20 +13,19 @@ var paths = {
 }
 function scssTask() {
 	return src(paths.styles.src)
-		.pipe(sass({
-			outputStyle: 'compressed',
-			quietDeps: true
-		}).on('error', sass.logError))
+		.pipe(plumber())
+		.pipe(sass({outputStyle: 'compressed', quietDeps: true}).on('error', sass.logError))
 		.pipe(postcss([autoprefixer()]))
-		.pipe(dest(paths.styles.dest));
+		.pipe(dest(paths.styles.dest))
+		.pipe(browsersync.stream());
 }
 exports.scssTask = scssTask
 // Browsersync Tasks
 function browsersyncServe(cb){
 	browsersync.init({
-		server: {
-			baseDir: '.'
-		}
+		proxy: 'http://powercityuk.test/', // Your local dev server
+		host: 'powercityuk.test',
+		open: 'external'
 	});
 	cb();
 }
@@ -36,7 +36,7 @@ function browsersyncReload(cb){
 }
 // Watch Task
 function watchTask(){
-	watch('**/*.html', browsersyncReload);
+	watch('**/*.php', browsersyncReload);
 	watch([paths.styles.src], series(scssTask, browsersyncReload));
 }
 // Default Gulp task

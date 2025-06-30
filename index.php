@@ -64,11 +64,52 @@
 										<input type="text" required name="mobile" class="form-control" id="homeContactMobile" placeholder="Your phone number"  />
 									</div>
 									<!-- Each item -->
-                                    <div class="form-group form-check">
-                                        <input class="form-label form-check-input" type="checkbox" value="" id="checkDefault">
-                                        <label class="form-check-label" for="checkDefault">
-                                            Default checkbox
-                                        </label>
+                                    <div class="form-group flex-wrap flex-row">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" name="discipleship" type="checkbox" value="" id="discipleship">
+                                            <label class="form-check-label" for="discipleship">Discipleship</label>
+                                        </div>
+                                        <!-- Each item -->
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" name="training_equipping" type="checkbox" value="" id="trainingEquipping">
+                                            <label class="form-check-label" for="trainingEquipping">Training and Equipping</label>
+                                        </div>
+                                        <!-- Each item -->
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" name="join_campus" type="checkbox" value="" id="joinCampus">
+                                            <label class="form-check-label" for="joinCampus">Join a campus</label>
+                                        </div>
+                                        <!-- Each item -->
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" name="start_campus" type="checkbox" value="" id="startCampus">
+                                            <label class="form-check-label" for="startCampus">Start a campus</label>
+                                        </div>
+                                        <!-- Each item -->
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" name="prayer" type="checkbox" value="" id="prayer">
+                                            <label class="form-check-label" for="prayer">Prayer</label>
+                                        </div>
+                                        <!-- Each item -->
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" name="counselling" type="checkbox" value="" id="counselling">
+                                            <label class="form-check-label" for="counselling">Counselling</label>
+                                        </div>
+                                        <!-- Each item -->
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" name="resources" type="checkbox" value="" id="resources">
+                                            <label class="form-check-label" for="resources">Resources</label>
+                                        </div>
+                                        <!-- Each item -->
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" name="mentoring_academy" type="checkbox" value="" id="mentoringAcademy">
+                                            <label class="form-check-label" for="mentoringAcademy">Mentoring Academy</label>
+                                        </div>
+                                        <!-- Each item -->
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" name="question" type="checkbox" value="" id="question">
+                                            <label class="form-check-label" for="question">?</label>
+                                        </div>
+                                        <!-- Each item -->
                                     </div>
                                     <!-- Each item -->
 									<div class="form-group">
