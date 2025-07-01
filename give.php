@@ -32,33 +32,19 @@
                     <div class="container">
                         <div class="give-section-wrapper">
                             <div class="give-section-header">
-                                <h2 class="text-center">SERVICE OFFERINGS & DONATIONS</h2>
-                                <h5 class="text-center">GIVE YOUR HONOUR, SERVICE AND PARTNERSHIP OFFERINGS</h5>
+                                <h2 class="text-center">DONATIONS</h2>
+                                <h5 class="text-center">Support the work of God on Earth</h5>
                             </div>
                             <div class="give-section-body">
                                 <div class="give-section-item">
                                     <h4>Direct Bank Transfer</h4>
                                     <ul class="list-unstyled d-flex flex-column">
                                         <li>BANK NAME: TRUIST BANK (USA)</li>
-                                        <li>ACCOUNT NAME: POWERCITY INTERNATIONAL CONFERENCE INC</li>
-                                        <li>ACCOUNT NUMBER: 1210005879807</li>
-                                        <li>ROUTING NUMBER: 055003308</li>
-                                        <li>SWIFT CODE: BRBTUS33</li>
-                                    </ul>
-                                </div>
-                                <!-- Each item -->
-                                <div class="give-section-item">
-                                    <h4>Zelle</h4>
-                                    <ul class="list-unstyled d-flex flex-column">
-                                        <li>PCIUSCANADA@GMAIL.COM</li>
-                                    </ul>
-                                </div>
-                                <!-- Each item -->
-                                <div class="give-section-item">
-                                    <h4>Cash APP</h4>
-                                    <ul class="list-unstyled d-flex flex-column">
-                                        <li>NAME: $POWERCITYCONFERENCE</li>
-                                        <li>PHONE NUMBER: +1 678-862-2855</li>
+                                        <li>ACCOUNT NAME: ABEL DAMINA MINISTRIES INTERNATIONAL</li>
+                                        <li>ACCOUNT NUMBER: 03464709</li>
+                                        <li>SORT CODE: 20-08-64</li>
+                                        <li>IBAN: GB07 BUKB 20086403464709</li>
+                                        <li>SWIFT CODE: BUKBGB22</li>
                                     </ul>
                                 </div>
                                 <!-- Each item -->

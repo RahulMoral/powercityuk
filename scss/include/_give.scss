@@ -69,19 +69,22 @@
 			}
 		}
 		.give-section-body{
-			display: grid;
-			grid-gap: 30px;
-			grid-template-columns: repeat(3, 1fr);
-			@include media-breakpoint-down(lg){
-				grid-template-columns: repeat(2, 1fr);
-			}
-			@include media-breakpoint-down(md){
-				grid-template-columns: 1fr;
-			}
+			display: flex;
+			//grid-gap: 30px;
+			//grid-template-columns: repeat(3, 1fr);
+			justify-content: center;
+			//@include media-breakpoint-down(lg){
+			//	grid-template-columns: repeat(2, 1fr);
+			//}
+			//@include media-breakpoint-down(md){
+			//	grid-template-columns: 1fr;
+			//}
 			.give-section-item{
 				display: flex;
 				flex-direction: column;
+				max-width: 450px;
 				row-gap: 10px;
+				width: 100%;
 				h4{
 					color: #0536c1;
 					font-size: 24px;

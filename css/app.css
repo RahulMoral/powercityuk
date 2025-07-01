@@ -12179,9 +12179,9 @@ button:focus {
     height: 0;
   }
 }
-@media (min-width: 2160px) {
+@media (min-width: 2000px) {
   .home-banner .home-banner-wrapper {
-    padding-bottom: 56.25%;
+    padding-bottom: 75%;
   }
 }
 
@@ -12575,24 +12575,15 @@ button:focus {
   margin-bottom: 0;
 }
 .give-section .give-section-wrapper .give-section-body {
-  display: grid;
-  grid-gap: 30px;
-  grid-template-columns: repeat(3, 1fr);
-}
-@media (max-width: 1023.98px) {
-  .give-section .give-section-wrapper .give-section-body {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media (max-width: 767.98px) {
-  .give-section .give-section-wrapper .give-section-body {
-    grid-template-columns: 1fr;
-  }
+  display: flex;
+  justify-content: center;
 }
 .give-section .give-section-wrapper .give-section-body .give-section-item {
   display: flex;
   flex-direction: column;
+  max-width: 450px;
   row-gap: 10px;
+  width: 100%;
 }
 .give-section .give-section-wrapper .give-section-body .give-section-item h4, .give-section .give-section-wrapper .give-section-body .give-section-item .h4 {
   color: #0536c1;
