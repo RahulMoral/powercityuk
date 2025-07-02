@@ -31,6 +31,33 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         exit;
     }
 
+    $csvFile = 'customer-data.csv';
+
+    // ✅ Check if file exists
+    if (!file_exists($csvFile)) {
+        // Create file and add header
+        $header = ['Date', 'Name', 'Email', 'Mobile Number', 'Message'];
+        $file = fopen($csvFile, 'w');
+        fputcsv($file, $header);
+        fclose($file);
+    }
+
+    // ✅ Now append data
+    $file = fopen($csvFile, 'a');
+
+    // ✅ Save to CSV
+    $data = [
+        date('Y-m-d H:i:s'), // submission time
+        $name,
+        $email,
+        $mobile,
+        $message
+    ];
+
+    fputcsv($file, $data);
+    fclose($file);
+
+// ✅ Send Email via PHPMailer
     $mail = new PHPMailer(true);
 
     try {
