@@ -12546,7 +12546,12 @@ button:focus {
 }
 
 .give-section {
-  padding: 60px 0;
+  padding: 100px 0;
+}
+@media (max-width: 1199.98px) {
+  .give-section {
+    padding: 60px 0;
+  }
 }
 .give-section .give-section-wrapper {
   display: flex;
@@ -12576,13 +12581,15 @@ button:focus {
 }
 .give-section .give-section-wrapper .give-section-body {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  row-gap: 30px;
 }
 .give-section .give-section-wrapper .give-section-body .give-section-item {
   display: flex;
   flex-direction: column;
   max-width: 450px;
-  row-gap: 10px;
+  row-gap: 20px;
   width: 100%;
 }
 .give-section .give-section-wrapper .give-section-body .give-section-item h4, .give-section .give-section-wrapper .give-section-body .give-section-item .h4 {
@@ -12601,6 +12608,19 @@ button:focus {
   color: #0b2035;
   font-size: 15px;
   font-family: "Poppins", sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.5;
+}
+.give-section .give-section-wrapper .give-section-body .give-section-item ul li span {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+.give-section .give-section-wrapper .give-section-body h2, .give-section .give-section-wrapper .give-section-body .h2 {
+  color: #0536c1;
+  font-size: 24px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-bottom: 0;
+  width: 100%;
 }

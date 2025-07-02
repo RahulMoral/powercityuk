@@ -31,23 +31,19 @@
                 <section class="give-section">
                     <div class="container">
                         <div class="give-section-wrapper">
-                            <div class="give-section-header">
-                                <h2 class="text-center">DONATIONS</h2>
-                                <h5 class="text-center">Support the work of God on Earth</h5>
-                            </div>
                             <div class="give-section-body">
                                 <div class="give-section-item">
                                     <h4>Direct Bank Transfer</h4>
                                     <ul class="list-unstyled d-flex flex-column">
-                                        <li>BANK NAME: TRUIST BANK (USA)</li>
-                                        <li>ACCOUNT NAME: ABEL DAMINA MINISTRIES INTERNATIONAL</li>
-                                        <li>ACCOUNT NUMBER: 03464709</li>
-                                        <li>SORT CODE: 20-08-64</li>
-                                        <li>IBAN: GB07 BUKB 20086403464709</li>
-                                        <li>SWIFT CODE: BUKBGB22</li>
+                                        <li><span>ACCOUNT NAME:</span> ABEL DAMINA MINISTRIES INTERNATIONAL</li>
+                                        <li><span>ACCOUNT NUMBER:</span> 03464709</li>
+                                        <li><span>SORT CODE:</span> 20-08-64</li>
+                                        <li><span>IBAN:</span> GB07 BUKB 20086403464709</li>
+                                        <li><span>SWIFT CODE:</span> BUKBGB22</li>
                                     </ul>
                                 </div>
                                 <!-- Each item -->
+                                <h2 class="text-center">Please reference your Giving as "30 DoG" - 30 Days of Glory</h2>
                             </div>
                         </div>
                     </div>

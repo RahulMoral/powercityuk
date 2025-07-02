@@ -32,7 +32,7 @@
 							<div class="home-content-contact">
 								<form id="contactForm">
 									<div class="form-group">
-										<h3>Contact Form</h3>
+										<h3>Any Question, Contact Us</h3>
 									</div>
 									<div class="form-group">
 										<label class="form-label" for="homeContactName">Name<span>*</span></label>
