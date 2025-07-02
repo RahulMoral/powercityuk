@@ -18,15 +18,17 @@
 			<!-- Main -->
 			<main class="site-main">
 				<!-- Home banner -->
-				<a class="home-banner" href="https://www.youtube.com/@abeldaminaministries/streams" target="_blank">
-					<img alt="Banner Image" src="/images/new-home-page-banner.jpg" class="img-fluid d-block w-100" />
-					<div class="container">
-						<div class="home-banner-wrapper">&nbsp;</div>
-					</div>
-				</a>
+                <section class="live-stream">
+                    <div class="container">
+                        <h1 class="text-center">Live Stream start 6:00 PM Monday to Friday! <a href="#findMoreContent">Find out more.</a></h1>
+                    </div>
+                </section>
+                <section class="youtube-video">
+                    <iframe src="https://www.youtube.com/embed/vzv7Xzjl5oc?si=qIstDZkkO61ouxAD" title="YouTube video player" frameborder="0" allow="autoplay; encrypted-media;" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </section>
 				<!-- Home banner end -->
 				<!-- Home content -->
-				<section class="home-content">
+				<section class="home-content" id="findMoreContent">
 					<div class="container">
 						<div class="home-content-wrapper">
 							<div class="home-content-contact">
@@ -70,7 +72,10 @@
 							</div>
 							<div class="home-content-info">
 								<div class="home-content-info-address">
-									<h3>London Zone Campuses</h3>
+									<h3 class="d-flex flex-column">
+                                        London Zone Campuses
+                                        <span class="d-block">Phone Number: 00000000000</span>
+                                    </h3>
 									<div class="home-content-info-items">
 										<div class="home-content-info-item">
 											<a href="javascript:void(0);" class="home-content-info-item-trigger">
@@ -387,7 +392,10 @@
 									</div>
 								</div>
 								<div class="home-content-info-address">
-									<h3>UK Zone Campuses</h3>
+									<h3 class="d-flex flex-column">
+                                        UK Zone Campuses
+                                        <span class="d-block">Phone Number: 00000000000</span>
+                                    </h3>
 									<div class="home-content-info-items">
 										<div class="home-content-info-item">
 											<a href="javascript:void(0);" class="home-content-info-item-trigger">
