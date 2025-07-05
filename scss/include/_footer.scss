@@ -2,7 +2,7 @@
 	background-color: #0b2035;
 	padding: 60px 0;
 	.main-footer-wrapper{
-		align-items: center;
+		align-items: flex-start;
 		display: flex;
 		flex-wrap: wrap;
 		gap: 20px;
@@ -21,6 +21,28 @@
 				@include font-Poppins-Regular;
 				line-height: 1.5;
 				margin-bottom: 0;
+				a{
+					color: #6D5DFB;
+				}
+			}
+		}
+		.main-footer-disclaimer{
+			max-width: 400px;
+			h4{
+				color: white;
+				font-size: 20px;
+				@include font-Poppins-Bold;
+				line-height: 1.5;
+			}
+			p{
+				color: white;
+				font-size: 14px;
+				@include font-Poppins-Regular;
+				line-height: 1.5;
+				margin-bottom: 0;
+				a{
+					color: #6D5DFB;
+				}
 			}
 		}
 		.main-footer-charity{

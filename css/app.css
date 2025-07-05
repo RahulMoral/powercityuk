@@ -12112,7 +12112,7 @@ button:focus {
   padding: 60px 0;
 }
 .main-footer .main-footer-wrapper {
-  align-items: center;
+  align-items: flex-start;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -12135,6 +12135,30 @@ button:focus {
   font-weight: 400;
   line-height: 1.5;
   margin-bottom: 0;
+}
+.main-footer .main-footer-wrapper .main-footer-about p a {
+  color: #6D5DFB;
+}
+.main-footer .main-footer-wrapper .main-footer-disclaimer {
+  max-width: 400px;
+}
+.main-footer .main-footer-wrapper .main-footer-disclaimer h4, .main-footer .main-footer-wrapper .main-footer-disclaimer .h4 {
+  color: white;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  line-height: 1.5;
+}
+.main-footer .main-footer-wrapper .main-footer-disclaimer p {
+  color: white;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+.main-footer .main-footer-wrapper .main-footer-disclaimer p a {
+  color: #6D5DFB;
 }
 .main-footer .main-footer-wrapper .main-footer-charity {
   color: white;
@@ -12374,6 +12398,7 @@ button:focus {
   align-items: center;
   background-color: #0536c1;
   border-radius: 10px;
+  cursor: default;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -12671,4 +12696,48 @@ button:focus {
   line-height: 1.5;
   margin-bottom: 0;
   width: 100%;
+}
+
+.disclaimer {
+  padding: 100px 0;
+}
+@media (max-width: 1199.98px) {
+  .disclaimer {
+    padding: 60px 0;
+  }
+}
+.disclaimer .disclaimer-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 960px;
+  row-gap: 60px;
+}
+@media (max-width: 1199.98px) {
+  .disclaimer .disclaimer-wrapper {
+    row-gap: 40px;
+  }
+}
+.disclaimer .disclaimer-wrapper .disclaimer-item {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+.disclaimer .disclaimer-wrapper .disclaimer-item h2, .disclaimer .disclaimer-wrapper .disclaimer-item .h2 {
+  color: #0536c1;
+  font-size: 30px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  width: 100%;
+}
+.disclaimer .disclaimer-wrapper .disclaimer-item p {
+  color: #0b2035;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 0;
 }
