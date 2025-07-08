@@ -12126,6 +12126,11 @@ button:focus {
     grid-template-columns: 1fr;
   }
 }
+@media (min-width: 1400px) {
+  .main-footer .main-footer-wrapper {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
 .main-footer .main-footer-wrapper .main-footer-about h4, .main-footer .main-footer-wrapper .main-footer-about .h4 {
   color: white;
   font-size: 20px;
