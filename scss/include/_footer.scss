@@ -2,18 +2,23 @@
 	background-color: #0b2035;
 	padding: 60px 0;
 	.main-footer-wrapper{
-		align-items: flex-start;
-		display: flex;
-		flex-wrap: wrap;
-		gap: 20px;
-		justify-content: space-between;
+		display: grid;
+		grid-gap: 20px;
+		grid-template-columns: 1fr 200px 270px 160px;
+		@include media-breakpoint-down(lg){
+			grid-template-columns: repeat(2, 1fr);
+		}
+		@include media-breakpoint-down(md){
+			grid-template-columns: 1fr;
+		}
 		.main-footer-about{
-			max-width: 400px;
+			//max-width: 400px;
 			h4{
 				color: white;
 				font-size: 20px;
 				@include font-Poppins-Bold;
 				line-height: 1.5;
+				margin-bottom: 20px;
 			}
 			p{
 				color: white;
@@ -27,12 +32,13 @@
 			}
 		}
 		.main-footer-disclaimer{
-			max-width: 400px;
+			//max-width: 400px;
 			h4{
 				color: white;
 				font-size: 20px;
 				@include font-Poppins-Bold;
 				line-height: 1.5;
+				margin-bottom: 20px;
 			}
 			p{
 				color: white;
@@ -44,12 +50,70 @@
 					color: #6D5DFB;
 				}
 			}
+			.list-unstyled{
+				display: flex;
+				flex-direction: column;
+				margin-bottom: 0;
+				row-gap: 10px;
+				li{
+					a{
+						color: #6D5DFB;
+						font-size: 16px;
+						@include font-Poppins-Medium;
+						outline: none;
+						text-decoration: none;
+					}
+				}
+			}
 		}
 		.main-footer-charity{
-			color: white;
-			font-size: 20px;
-			@include font-Poppins-Bold;
-			line-height: 1.25;
+			display: flex;
+			flex-direction: column;
+			h4{
+				color: white;
+				font-size: 20px;
+				@include font-Poppins-Bold;
+				line-height: 1.5;
+				margin-bottom: 20px;
+			}
+			h5{
+				color: white;
+				font-size: 16px;
+				@include font-Poppins-Medium;
+			}
+		}
+		.main-footer-social{
+			h4{
+				color: white;
+				font-size: 20px;
+				@include font-Poppins-Bold;
+				line-height: 1.5;
+				margin-bottom: 20px;
+			}
+			.list-unstyled{
+				display: flex;
+				flex-wrap: wrap;
+				gap: 1rem;
+				li{
+					a{
+						svg{
+							height: 20px;
+							path{
+								fill: white;
+								transition: linear 0.4s;
+							}
+						}
+						&:hover,
+						&:focus{
+							svg{
+								path{
+									fill: #6D5DFB;
+								}
+							}
+						}
+					}
+				}
+			}
 		}
 	}
 }

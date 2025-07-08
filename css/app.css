@@ -12112,14 +12112,19 @@ button:focus {
   padding: 60px 0;
 }
 .main-footer .main-footer-wrapper {
-  align-items: flex-start;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: space-between;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 200px 270px 160px;
 }
-.main-footer .main-footer-wrapper .main-footer-about {
-  max-width: 400px;
+@media (max-width: 1023.98px) {
+  .main-footer .main-footer-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 767.98px) {
+  .main-footer .main-footer-wrapper {
+    grid-template-columns: 1fr;
+  }
 }
 .main-footer .main-footer-wrapper .main-footer-about h4, .main-footer .main-footer-wrapper .main-footer-about .h4 {
   color: white;
@@ -12127,6 +12132,7 @@ button:focus {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   line-height: 1.5;
+  margin-bottom: 20px;
 }
 .main-footer .main-footer-wrapper .main-footer-about p {
   color: white;
@@ -12139,15 +12145,13 @@ button:focus {
 .main-footer .main-footer-wrapper .main-footer-about p a {
   color: #6D5DFB;
 }
-.main-footer .main-footer-wrapper .main-footer-disclaimer {
-  max-width: 400px;
-}
 .main-footer .main-footer-wrapper .main-footer-disclaimer h4, .main-footer .main-footer-wrapper .main-footer-disclaimer .h4 {
   color: white;
   font-size: 20px;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   line-height: 1.5;
+  margin-bottom: 20px;
 }
 .main-footer .main-footer-wrapper .main-footer-disclaimer p {
   color: white;
@@ -12160,12 +12164,60 @@ button:focus {
 .main-footer .main-footer-wrapper .main-footer-disclaimer p a {
   color: #6D5DFB;
 }
+.main-footer .main-footer-wrapper .main-footer-disclaimer .list-unstyled {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0;
+  row-gap: 10px;
+}
+.main-footer .main-footer-wrapper .main-footer-disclaimer .list-unstyled li a {
+  color: #6D5DFB;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  outline: none;
+  text-decoration: none;
+}
 .main-footer .main-footer-wrapper .main-footer-charity {
+  display: flex;
+  flex-direction: column;
+}
+.main-footer .main-footer-wrapper .main-footer-charity h4, .main-footer .main-footer-wrapper .main-footer-charity .h4 {
   color: white;
   font-size: 20px;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
-  line-height: 1.25;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+.main-footer .main-footer-wrapper .main-footer-charity h5, .main-footer .main-footer-wrapper .main-footer-charity .h5 {
+  color: white;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+.main-footer .main-footer-wrapper .main-footer-social h4, .main-footer .main-footer-wrapper .main-footer-social .h4 {
+  color: white;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+.main-footer .main-footer-wrapper .main-footer-social .list-unstyled {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.main-footer .main-footer-wrapper .main-footer-social .list-unstyled li a svg {
+  height: 20px;
+}
+.main-footer .main-footer-wrapper .main-footer-social .list-unstyled li a svg path {
+  fill: white;
+  transition: linear 0.4s;
+}
+.main-footer .main-footer-wrapper .main-footer-social .list-unstyled li a:hover svg path, .main-footer .main-footer-wrapper .main-footer-social .list-unstyled li a:focus svg path {
+  fill: #6D5DFB;
 }
 
 .home-banner {
