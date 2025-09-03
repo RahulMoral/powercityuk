@@ -1,0 +1,115 @@
+.event{
+	padding: 120px 0;
+	.event-wrapper{
+		display: flex;
+		flex-direction: column;
+		row-gap: 30px;
+		.event-tabs{
+			column-gap: 1rem;
+			display: flex;
+			justify-content: center;
+			button{
+				background-color: #f6f6f6;
+				border: none;
+				border-radius: 4px;
+				box-shadow: 0 4px 12px rgba(5, 54, 193, 0.3);
+				color: #4a4a4a;
+				font-size: 14px;
+				@include font-Poppins-Medium;
+				padding: 10px 24px;
+				transition: all 0.3s ease-in-out 0s;
+				&.active{
+					background-color: #0536c1;
+					color: white;
+				}
+			}
+		}
+		.events-container{
+			display: flex;
+			flex-direction: column;
+			row-gap: 20px;
+			.events-container-wrapper{
+				display: grid;
+				grid-gap: 30px;
+				grid-template-columns: repeat(3, 1fr);
+				@include media-breakpoint-down(lg){
+					grid-template-columns: repeat(2, 1fr);
+				}
+				@include media-breakpoint-down(sm){
+					grid-template-columns: 1fr;
+				}
+				.event-card{
+					background-color: white;
+					border: 1px solid #eee;
+					border-radius: 5px;
+					box-shadow: 0 4px 12px rgba(5, 54, 193, 0.3);
+					display: flex;
+					flex-direction: column;
+					row-gap: 1rem;
+					.event-card-image{
+						border-top-left-radius: 5px;
+						border-top-right-radius: 5px;
+						overflow: hidden;
+					}
+					.event-card-content{
+						display: flex;
+						flex-direction: column;
+						padding: 0 20px 20px;
+						row-gap: 1rem;
+						h3{
+							color: #4a4a4a;
+							font-size: 20px;
+							@include font-Poppins-SemiBold;
+							margin-bottom: 0;
+						}
+						p{
+							color: #969696;
+							font-size: 14px;
+							@include font-Poppins-Regular;
+							line-height: 2;
+							margin-bottom: 0;
+						}
+					}
+				}
+			}
+			.event-pagination{
+				align-items: center;
+				column-gap: 10px;
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				.event-pagination-button,
+				.event-pagination-text{
+					background-color: #f6f6f6;
+					border: none;
+					border-radius: 4px;
+					box-shadow: 0 4px 12px rgba(5, 54, 193, 0.3);
+					color: #4a4a4a;
+					font-size: 14px;
+					@include font-Poppins-Medium;
+					padding: 5px 10px;
+					transition: all 0.3s ease-in-out 0s;
+				}
+				.event-pagination-item{
+					align-items: center;
+					background-color: #f6f6f6;
+					border: none;
+					border-radius: 4px;
+					box-shadow: 0 4px 12px rgba(5, 54, 193, 0.3);
+					display: flex;
+					color: #4a4a4a;
+					font-size: 14px;
+					@include font-Poppins-Medium;
+					justify-content: center;
+					min-width: 36px;
+					padding: 5px;
+					transition: all 0.3s ease-in-out 0s;
+					&.active{
+						background-color: #0536c1;
+						color: white;
+					}
+				}
+			}
+		}
+	}
+}

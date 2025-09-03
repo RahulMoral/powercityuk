@@ -4,16 +4,16 @@
 	.main-footer-wrapper{
 		display: grid;
 		grid-gap: 20px;
-		grid-template-columns: 1fr 200px 270px 160px;
+		grid-template-columns: 1fr 270px 270px;
 		@include media-breakpoint-down(lg){
 			grid-template-columns: repeat(2, 1fr);
 		}
 		@include media-breakpoint-down(md){
 			grid-template-columns: 1fr;
 		}
-		@include media-breakpoint-up(xxl){
-			grid-template-columns: repeat(4, 1fr);
-		}
+		//@include media-breakpoint-up(xxl){
+		//	grid-template-columns: repeat(3, 1fr);
+		//}
 		.main-footer-about{
 			//max-width: 400px;
 			h4{
@@ -29,6 +29,9 @@
 				@include font-Poppins-Regular;
 				line-height: 1.5;
 				margin-bottom: 0;
+				@include media-breakpoint-up(lg){
+					max-width: 85%;
+				}
 				a{
 					color: #6D5DFB;
 				}
@@ -83,6 +86,30 @@
 				color: white;
 				font-size: 16px;
 				@include font-Poppins-Medium;
+			}
+			.list-unstyled{
+				display: flex;
+				flex-wrap: wrap;
+				gap: 1rem;
+				li{
+					a{
+						svg{
+							height: 20px;
+							path{
+								fill: white;
+								transition: linear 0.4s;
+							}
+						}
+						&:hover,
+						&:focus{
+							svg{
+								path{
+									fill: #6D5DFB;
+								}
+							}
+						}
+					}
+				}
 			}
 		}
 		.main-footer-social{

@@ -1,0 +1,122 @@
+.about-pastors{
+	padding: 120px 0;
+	.about-pastors-wrapper{
+		align-items: center;
+		display: flex;
+		gap: 60px;
+		@include media-breakpoint-down(lg){
+			flex-direction: column;
+		}
+		.about-pastors-content{
+			display: flex;
+			flex-direction: column;
+			flex-grow: 1;
+			row-gap: 20px;
+			h2{
+				color: #4a4a4a;
+				@include font-Poppins-SemiBold;
+				margin-bottom: 0;
+				text-transform: uppercase;
+			}
+			article{
+				display: flex;
+				flex-direction: column;
+				row-gap: 0.5rem;
+				p{
+					color: #9b9b9b;
+					font-size: 14px;
+					line-height: 20px;
+					margin-bottom: 0;
+					text-align: justify;
+				}
+			}
+		}
+		.about-pastors-image{
+			align-items: center;
+			display: flex;
+			flex: 0 0 500px;
+			flex-direction: column;
+			max-width: 500px;
+			@include media-breakpoint-down(lg){
+				flex: 0 0 100%;
+				max-width: 100%;
+			}
+			.about-pastors-image-container{
+				max-width: 500px;
+			}
+		}
+	}
+}
+.about-vision-mission{
+	background-image: linear-gradient(135deg, #8B7500, #FFD700, #f27121, #8B7500);
+	padding: 120px 0;
+	perspective: 1000px;
+	.about-vision-mission-wrapper{
+		display: grid;
+		grid-gap: 60px;
+		grid-template-columns: repeat(2, 1fr);
+		@include media-breakpoint-down(md){
+			grid-gap: 40px;
+			grid-template-columns: 1fr;
+		}
+		.about-vision-mission-item{
+			background: rgba(255, 255, 255, 0.1);
+			backdrop-filter: blur(12px);
+			border: 1px solid rgba(255, 255, 255, 0.2);
+			border-radius: 10px;
+			box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+			display: flex;
+			flex-direction: column;
+			padding: 40px 20px;
+			row-gap: 1rem;
+			.about-vision-mission-item-icon{
+				svg{
+					path{
+						fill: white;
+					}
+				}
+			}
+			h4{
+				color: white;
+				font-size: 24px;
+				@include font-Poppins-Bold;
+				line-height: 1.25;
+				margin-bottom: 0;
+			}
+			p{
+				color: white;
+				font-size: 15px;
+				@include font-Poppins-Medium;
+				line-height: 2;
+				margin-bottom: 0;
+				text-align: justify;
+			}
+			a{
+				align-items: center;
+				background-color: white;
+				//border: 2px solid #03227B;
+				border-radius: 4px;
+				box-shadow: 0 4px 12px rgba(5, 54, 193, 0.3);
+				color: #0536c1;
+				display: flex;
+				font-size: 14px;
+				@include font-Poppins-Medium;
+				//height: 40px;
+				letter-spacing: 1px;
+				line-height: calc(20 / 16);
+				outline: none;
+				padding: 14px 24px;
+				text-decoration: none;
+				text-transform: uppercase;
+				transition: all 0.3s ease;
+				&:hover,
+				&:focus{
+					//background-color: #032a96;
+					box-shadow: 0 6px 18px rgba(5, 54, 193, 0.45);
+					outline: none;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}

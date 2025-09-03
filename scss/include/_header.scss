@@ -3,10 +3,19 @@
 		background-color: white;
 		transition: linear 0.3s;
 		.navbar{
+			gap: 1rem;
 			justify-content: center;
 			overflow: hidden;
 			padding: 20px 0;
 			position: relative;
+			@include media-breakpoint-down(xl){
+				justify-content: space-between;
+			}
+			@include media-breakpoint-down(md){
+				align-items: center;
+				flex-direction: column;
+				justify-content: center;
+			}
 			.main-menu-logo{
 				display: inline-block;
 				height: auto;
@@ -23,24 +32,57 @@
 					max-width: 280px;
 				}
 			}
-			.main-menu-give-button{
-				background-color: #0536c1;
-				border-radius: 20px;
-				color: white;
-				font-size: 18px;
-				@include font-Poppins-SemiBold;
-				height: 40px;
-				line-height: calc(20 / 18);
-				outline: none;
-				padding: 10px 30px;
+			.main-menu-menu{
+				align-items: center;
+				column-gap: 20px;
+				display: flex;
 				position: absolute;
 				right: 0;
-				text-decoration: none;
-				text-transform: uppercase;
 				top: 50%;
 				transform: translateY(-50%);
+				@include media-breakpoint-down(xl){
+					position: static;
+					transform: none;
+				}
+				.main-menu-menu-item{
+					display: inline-flex;
+					line-height: 1;
+					.main-menu-menu-item-link{
+						color: #0536c1;
+						font-size: 18px;
+						@include font-Poppins-Medium;
+						outline: none;
+						text-decoration: none;
+						&:hover,
+						&:focus{
+							outline: none;
+							text-decoration: none;
+						}
+					}
+				}
+			}
+			.main-menu-give-button{
+				align-items: center;
+				background-color: #0536c1;
+				//border: 2px solid #03227B;
+				border-radius: 50px;
+				box-shadow: 0 4px 12px rgba(5, 54, 193, 0.3);
+				color: white;
+				display: flex;
+				font-size: 16px;
+				@include font-Poppins-Medium;
+				height: 40px;
+				letter-spacing: 1px;
+				line-height: calc(20 / 16);
+				outline: none;
+				padding: 10px 36px;
+				text-decoration: none;
+				text-transform: uppercase;
+				transition: all 0.3s ease;
 				&:hover,
 				&:focus{
+					background-color: #032a96;
+					box-shadow: 0 6px 18px rgba(5, 54, 193, 0.45);
 					outline: none;
 					text-decoration: none;
 				}
@@ -59,6 +101,13 @@
 					}
 					.after-scroll-logo{
 						display: inline-block;
+					}
+				}
+				.main-menu-menu{
+					.main-menu-menu-item{
+						.main-menu-menu-item-link{
+							color: white;
+						}
 					}
 				}
 				.main-menu-give-button{
