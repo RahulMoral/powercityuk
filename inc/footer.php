@@ -4,7 +4,7 @@
             <div class="main-footer-wrapper">
                 <div class="main-footer-about">
                     <h4>About Powercity</h4>
-                    <p>Power City International is a Word of Faith, non-denominational, Pentecostal church whose mission is reaching and harvesting lost souls for Christ and teaching the Body of Christ how to effectively apply God’s principles to have victory in every area of life. <a href="/mission-statement">...Read More</a></p>
+                    <p>Power City International is a Word of Faith, non-denominational, Pentecostal church whose mission is reaching and harvesting lost souls for Christ and teaching the Body of Christ how to effectively apply God’s principles to have victory in every area of life. <a href="/about-us">...Read More</a></p>
                 </div>
                 <div class="main-footer-disclaimer">
                     <h4>Quick Links</h4>

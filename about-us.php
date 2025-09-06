@@ -103,15 +103,15 @@
                                 </div>
                             </div>
                             <!-- Each item -->
-                            <div class="about-pastors-items-item">
-                                <!--<div class="about-pastors-items-item-image">
+                            <!--<div class="about-pastors-items-item">
+                                <div class="about-pastors-items-item-image">
                                     <img alt="" class="img-fluid d-block" src="https://picsum.photos/400" />
-                                </div>-->
+                                </div>
                                 <div class="about-pastors-items-item-content">
                                     NATIONAL ASST. LEADER LONDON ZONE - Pastor
                                     <span>Phone Number: 07588303167</span>
                                 </div>
-                            </div>
+                            </div>-->
                             <!-- Each item -->
                             <div class="about-pastors-items-item">
                                 <!--<div class="about-pastors-items-item-image">
@@ -123,15 +123,15 @@
                                 </div>
                             </div>
                             <!-- Each item -->
-                            <div class="about-pastors-items-item">
-                                <!--<div class="about-pastors-items-item-image">
+                            <!--<div class="about-pastors-items-item">
+                                <div class="about-pastors-items-item-image">
                                     <img alt="" class="img-fluid d-block" src="https://picsum.photos/400" />
-                                </div>-->
+                                </div>
                                 <div class="about-pastors-items-item-content">
                                     NATIONAL LEADER  UK and IE ZONE - Pastor Teg
                                     <span>Phone Number: 07888709126</span>
                                 </div>
-                            </div>
+                            </div>-->
                             <!-- Each item -->
                         </div>
                     </div>
