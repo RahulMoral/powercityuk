@@ -89,6 +89,22 @@ if ($isAjax) {
                         </div>
                     </div>
                 </section>
+                <section class="event-activity">
+                    <div class="container">
+                        <div class="event-activity-wrapper">
+                            <h2 class="text-center">Community Activities - London and UK/IE Zone</h2>
+                            <div class="event-activity-list">
+                                <div class="event-activity-list-item">- Weekly coffee meetings</div>
+                                <div class="event-activity-list-item">- Saturday Morning power nest for kids 6-16</div>
+                                <div class="event-activity-list-item">- University Campus missions</div>
+                                <div class="event-activity-list-item">- Love Shares; school holiday programs - Love Shares; school holiday programs</div>
+                                <div class="event-activity-list-item">- Prayer and Counseling session</div>
+                                <div class="event-activity-list-item">- Monthly drop-ins last Sat of the month</div>
+                                <div class="event-activity-list-item">- Love feast - last Saturday of each month</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 			</main>
 			<!-- Main end -->
 			<!-- Footer -->
