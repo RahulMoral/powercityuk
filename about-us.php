@@ -63,6 +63,10 @@
                             <div class="about-vision-mission-item">
                                 <h4>Our Mission</h4>
                                 <p>We are on a Mission to equip you the believer to know who you are in Christ, what you have in Christ, and what Christ can do through you!</p>
+                            </div>
+                            <div class="about-vision-mission-item">
+                                <h4>Our Assignment</h4>
+                                <p>Evangelism, Discipleship and Building strong local Churches</p>
                                 <div class="d-flex mt-3">
                                     <a href="/mission-statement">View More</a>
                                 </div>
