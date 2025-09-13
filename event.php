@@ -2,8 +2,19 @@
 $isAjax = isset($_GET['ajax']); // detect AJAX request
 include(dirname(__FILE__) . '/inc/event/event-data.php');
 
-function eventTimestamp($date) {
-    return DateTime::createFromFormat('d-m-Y', $date)->getTimestamp();
+function eventTimestamp($dateString) {
+    //return DateTime::createFromFormat('d-m-Y', $date)->getTimestamp();
+    $dates = array_map('trim', explode(',', $dateString));
+    $timestamps = [];
+
+    foreach ($dates as $d) {
+        $dateObj = DateTime::createFromFormat('d-m-Y', $d);
+        if ($dateObj) {
+            $timestamps[] = $dateObj->getTimestamp();
+        }
+    }
+
+    return $timestamps ? min($timestamps) : false;
 }
 
 $today = strtotime(date("d-m-Y"));

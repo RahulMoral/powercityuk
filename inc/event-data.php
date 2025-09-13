@@ -16,14 +16,7 @@ $eventData = [
         'event_time' => '6:00pm - 9pm',
         'event_address' => 'Five ways ScotLand Lane, Bartley Green Birm. B32 4BT'
     ],
-    [
-        'id' => 3,
-        'event_name' => 'IGNITE 2025',
-        'event_image' => '/images/event/ignite2025conference.jpg',
-        'event_date' => '31-05-2025, 01-06-2025, 02-06-2025',
-        'event_time' => '6:00pm - 9:00pm, 9:00am - 4:00pm, 9:00am - 3:00pm',
-        'event_address' => 'Five ways ScotLand Lane, Bartley Green Birm. B32 4BT'
-    ],
+  
   
    
 ]
