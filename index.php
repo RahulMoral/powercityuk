@@ -18,13 +18,17 @@
 			<!-- Main -->
 			<main class="site-main">
 				<!-- Home banner -->
-                <section class="live-stream">
+                <!--<section class="live-stream">
                     <div class="container">
                         <h1 class="text-center">Live Stream start 6:00 PM Monday to Friday! <a href="#findMoreContent">Find out more.</a></h1>
                     </div>
-                </section>
-                <section class="youtube-video">
+                </section>-->
+                <!--<section class="youtube-video">
                     <iframe src="https://www.youtube.com/embed/4UTJ78anPCo?si=lfDurPVkozvvbKo-" title="YouTube video player" frameborder="0" allow="autoplay; encrypted-media;" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </section>-->
+                <section class="home-banner">
+                    <img src="images/banner-1920.jpg" class="w-100 d-none d-xl-block h-auto img-fluid" alt="Live Stream start 6:00 PM Monday to Friday!" />
+                    <img src="images/banner-1920.jpg" class="w-100 d-block d-xl-none h-auto img-fluid" alt="Live Stream start 6:00 PM Monday to Friday!" />
                 </section>
 				<!-- Home banner end -->
 				<!-- Home content -->

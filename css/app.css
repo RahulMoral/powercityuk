@@ -12300,37 +12300,6 @@ button:focus {
   overflow: hidden;
   position: relative;
 }
-@media (min-width: 1024px) {
-  .home-banner img {
-    height: 100%;
-    left: 0;
-    -o-object-position: center;
-       object-position: center;
-    -o-object-fit: cover;
-       object-fit: cover;
-    position: absolute;
-    top: 0;
-    width: 100%;
-  }
-}
-.home-banner .home-banner-wrapper {
-  height: 700px;
-}
-@media (max-width: 1399.98px) {
-  .home-banner .home-banner-wrapper {
-    height: 512px;
-  }
-}
-@media (max-width: 1023.98px) {
-  .home-banner .home-banner-wrapper {
-    height: 0;
-  }
-}
-@media (min-width: 2000px) {
-  .home-banner .home-banner-wrapper {
-    padding-bottom: 75%;
-  }
-}
 
 .live-stream {
   padding: 30px 0;

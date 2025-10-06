@@ -6,29 +6,29 @@
 	background-size: cover;
 	overflow: hidden;
 	position: relative;
-	img{
-		@include media-breakpoint-up(lg){
-			height: 100%;
-			left: 0;
-			object-position: center;
-			object-fit: cover;
-			position: absolute;
-			top: 0;
-			width: 100%;
-		}
-	}
-	.home-banner-wrapper{
-		height: 700px;
-		@media (max-width: 1399.98px){
-			height: 512px;
-		}
-		@include media-breakpoint-down(lg){
-			height: 0;
-		}
-		@media (min-width: 2000px){
-			padding-bottom: 75%;
-		}
-	}
+	//img{
+	//	@include media-breakpoint-up(lg){
+	//		height: 100%;
+	//		left: 0;
+	//		object-position: center;
+	//		object-fit: cover;
+	//		position: absolute;
+	//		top: 0;
+	//		width: 100%;
+	//	}
+	//}
+	//.home-banner-wrapper{
+	//	height: 700px;
+	//	@media (max-width: 1399.98px){
+	//		height: 512px;
+	//	}
+	//	@include media-breakpoint-down(lg){
+	//		height: 0;
+	//	}
+	//	@media (min-width: 2000px){
+	//		padding-bottom: 75%;
+	//	}
+	//}
 }
 .live-stream{
 	padding: 30px 0;
