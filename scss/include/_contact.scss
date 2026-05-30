@@ -1,0 +1,91 @@
+.contacut-us{
+	padding: 100px 0 60px;
+	form{
+		display: flex;
+		flex-direction: column;
+		row-gap: 20px;
+		background-color: white;
+		border: 1px solid #ddd;
+		border-radius: 5px;
+		box-shadow:
+				-5px 0 10px rgba(0, 0, 0, 0.1),
+				5px 0 10px rgba(0, 0, 0, 0.1),
+				0 5px 10px rgba(0, 0, 0, 0.05);
+		padding: 40px;
+		.form-group{
+			align-items: flex-start;
+			display: flex;
+			flex-direction: column;
+			row-gap: 6px;
+			h3{
+				color: #6D5DFB;
+				font-size: 24px;
+				@include font-Poppins-Bold;
+				margin-bottom: 0;
+				text-align: center;
+				width: 100%;
+			}
+			.form-label{
+				color: #0B0852;
+				font-size: 14px;
+				@include font-Poppins-Medium;
+				margin-bottom: 0;
+				span{
+					color: red;
+				}
+			}
+			.form-control{
+				//background-color: #6fbcc2;
+				border-color: #6D5DFB;
+				border-radius: 4px;
+				box-shadow: none;
+				color: #0B0852;
+				font-size: 14px;
+				@include font-Poppins-Regular;
+				height: 46px;
+				transition: linear 0.4s;
+				//&:focus{
+				//	border-color: #6D5DFB;
+				//}
+			}
+			textarea{
+				&.form-control{
+					height: auto;
+				}
+			}
+			.recaptcha-wrapper{
+				@include media-breakpoint-down(sm){
+					transform: scale(0.75);
+					transform-origin: top left;
+				}
+			}
+			.home-content-contact-submit {
+				align-items: center;
+				background: linear-gradient(45deg, #1E1A7A, #6D5DFB);
+				border: none;
+				border-radius: 6px;
+				box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+				color: white;
+				cursor: pointer;
+				display: inline-flex;
+				font-size: 15px;
+				height: 46px;
+				justify-content: center;
+				outline: none;
+				text-decoration: none;
+				transition: background 0.4s ease, box-shadow 0.3s ease, transform 0.3s ease;
+				width: 120px;
+				@include font-Poppins-SemiBold;
+
+				&:hover,
+				&:focus {
+					background: linear-gradient(225deg, #1E1A7A, #6D5DFB);
+					box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+					outline: none;
+					text-decoration: none;
+					//transform: translateY(-2px);
+				}
+			}
+		}
+	}
+}

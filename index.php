@@ -8,7 +8,8 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" />
-		<link rel="stylesheet" href="css/app.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" />
+        <link rel="stylesheet" href="css/app.css" />
 	</head>
 	<body>
 		<div class="page-wrapper">
@@ -27,9 +28,16 @@
                     <iframe src="https://www.youtube.com/embed/4UTJ78anPCo?si=lfDurPVkozvvbKo-" title="YouTube video player" frameborder="0" allow="autoplay; encrypted-media;" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </section>-->
                 <section class="home-banner">
-                    <img src="images/banner-1920.jpg" class="w-100 d-none d-xl-block h-auto img-fluid" alt="Live Stream start 6:00 PM Monday to Friday!" />
-                    <img src="images/banner-1920.jpg" class="w-100 d-block d-xl-none h-auto img-fluid" alt="Live Stream start 6:00 PM Monday to Friday!" />
+                    <div class="home-banner-wrapper">
+                        <img src="images/banner-image-2026.jpg" alt="Live Stream start 6:00 PM Monday to Friday!" />
+                    </div>
+                    <!--<img src="images/banner-1920.jpg" class="w-100 d-block d-xl-none h-auto img-fluid" alt="Live Stream start 6:00 PM Monday to Friday!" />-->
                 </section>
+                <!--<section class="front-page-banner">
+                    <div class="container">
+                        <h1 class="text-center">If you want to know more about Powercity International UK , Use the contact form Below to reach us.</h1>
+                    </div>
+                </section>-->
 				<!-- Home banner end -->
 				<!-- Home content -->
 				<section class="home-content" id="findMoreContent">
@@ -599,6 +607,84 @@
                                         <div class="home-content-info-item">
                                             <a href="javascript:void(0);" class="home-content-info-item-trigger">
                                                 <span>Nottingham Campus</span>
+                                                <span>Details</span>
+                                            </a>
+                                            <div class="home-content-info-item-popups">
+                                                <div class="home-content-info-item-popups-container">
+                                                    <div class="home-content-info-item-popups-header">
+                                                        <h5>Nottingham Campus</h5>
+                                                        <button type="button" role="button" class="home-content-info-item-popups-close">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                                                <path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                    <div class="home-content-info-item-popups-body">
+                                                        <div class="home-content-info-item-popups-item">
+															<span>
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+																	<path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/>
+																</svg>
+															</span>
+                                                            <span>35  Friars Wharf, Gateshead Newcastle, NE10 0QX</span>
+                                                        </div>
+                                                        <!-- Each item -->
+                                                        <div class="home-content-info-item-popups-item">
+															<span>
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+																	<path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/>
+																</svg>
+															</span>
+                                                            <span>Phone number not found</span>
+                                                        </div>
+                                                        <!-- Each item -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Each item -->
+										<div class="home-content-info-item">
+                                            <a href="javascript:void(0);" class="home-content-info-item-trigger">
+                                                <span>Scotland Campus</span>
+                                                <span>Details</span>
+                                            </a>
+                                            <div class="home-content-info-item-popups">
+                                                <div class="home-content-info-item-popups-container">
+                                                    <div class="home-content-info-item-popups-header">
+                                                        <h5>Nottingham Campus</h5>
+                                                        <button type="button" role="button" class="home-content-info-item-popups-close">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                                                <path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                    <div class="home-content-info-item-popups-body">
+                                                        <div class="home-content-info-item-popups-item">
+															<span>
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+																	<path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/>
+																</svg>
+															</span>
+                                                            <span>35  Friars Wharf, Gateshead Newcastle, NE10 0QX</span>
+                                                        </div>
+                                                        <!-- Each item -->
+                                                        <div class="home-content-info-item-popups-item">
+															<span>
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+																	<path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/>
+																</svg>
+															</span>
+                                                            <span>Phone number not found</span>
+                                                        </div>
+                                                        <!-- Each item -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Each item -->
+                                        <div class="home-content-info-item">
+                                            <a href="javascript:void(0);" class="home-content-info-item-trigger">
+                                                <span>Leeds Campus</span>
                                                 <span>Details</span>
                                             </a>
                                             <div class="home-content-info-item-popups">

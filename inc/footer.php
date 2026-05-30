@@ -13,6 +13,9 @@
                             <a href="/about-us">About Us</a>
                         </li>
                         <li>
+                            <a href="/contact">Contact Us</a>
+                        </li>
+                        <li>
                             <a href="/mission-statement">Our Mission</a>
                         </li>
                         <li>

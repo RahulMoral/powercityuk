@@ -12,10 +12,16 @@
                 </a>
                 <div class="main-menu-menu">
                     <div class="main-menu-menu-item">
+                        <a href="/" class="main-menu-menu-item-link">Home</a>
+                    </div>
+                    <div class="main-menu-menu-item">
                         <a href="/about-us" class="main-menu-menu-item-link">About Us</a>
                     </div>
                     <div class="main-menu-menu-item">
                         <a href="/event" class="main-menu-menu-item-link">Events</a>
+                    </div>
+                    <div class="main-menu-menu-item">
+                        <a href="/shop" class="main-menu-menu-item-link">Shop</a>
                     </div>
                     <div class="main-menu-menu-item">
                         <?php
