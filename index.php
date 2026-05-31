@@ -29,7 +29,7 @@
                 </section>-->
                 <section class="home-banner">
                     <div class="home-banner-wrapper">
-                        <img src="images/banner-image-2026.jpg" alt="Live Stream start 6:00 PM Monday to Friday!" />
+                        <img src="images/banner-image-1920.jpg" alt="Live Stream start 6:00 PM Monday to Friday!" />
                     </div>
                     <!--<img src="images/banner-1920.jpg" class="w-100 d-block d-xl-none h-auto img-fluid" alt="Live Stream start 6:00 PM Monday to Friday!" />-->
                 </section>
